@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="logo_height">298dp</dimen>
+    <dimen name="margin_screen">16dp</dimen>
+    <dimen name="beetwin_actors">8dp</dimen>
+    <dimen name="actor_name_top_margin">6dp</dimen>
+</resources>
