@@ -15,12 +15,12 @@
         <ImageView
             android:id="@+id/movie_logo_img"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/logo_height"
+            android:layout_height="wrap_content"
             android:scaleType="centerCrop"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-
+            android:adjustViewBounds="true"
             app:srcCompat="@drawable/img_avengers_background"
             android:contentDescription="@string/avengers_end_game_banner"/>
 
@@ -45,8 +45,8 @@
             android:textSize="12sp"
             android:alpha="0.5"
             android:onClick="moveToMainScreen"
-            android:layout_marginStart="18dp"
-            android:layout_marginTop="44dp"
+            android:layout_marginStart="@dimen/margin_screen"
+            android:layout_marginTop="48dp"
             app:drawableLeftCompat="@drawable/ic_left_arrow"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -56,12 +56,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/age_limit"
-
             android:layout_marginStart="@dimen/margin_screen"
-            android:layout_marginTop="226dp"
-
+            android:layout_marginBottom="12dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/film_title"
 
             style="@style/age_limit"/>
 
@@ -74,7 +72,8 @@
             android:text="@string/title"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/age_limit"
+            app:layout_constraintTop_toBottomOf="@id/movie_logo_img"
+            app:layout_constraintBottom_toBottomOf="@id/movie_logo_img"
             style="@style/film_title" />
 
         <TextView
@@ -97,22 +96,23 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_screen"
-            android:layout_marginTop="8dp"
+
             android:numStars="5"
             android:rating="4"
             android:theme="@style/RatingBar"
             style="@style/Widget.AppCompat.RatingBar.Small"
 
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/film_genre"/>
+            app:layout_constraintTop_toTopOf="@id/film_reviews"
+            app:layout_constraintBottom_toBottomOf="@id/film_reviews"/>
 
         <TextView
             android:id="@+id/film_reviews"
             style="@style/film_reviews"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="6dp"
-            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="8dp"
             android:text="@string/film_reviews"
             app:layout_constraintStart_toEndOf="@+id/ratingBar"
             app:layout_constraintTop_toBottomOf="@+id/film_genre"
@@ -123,7 +123,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_screen"
-            android:layout_marginTop="28dp"
+            android:layout_marginTop="24dp"
             android:layout_marginEnd="@dimen/margin_screen"
             android:text="@string/storyline_header"
             app:layout_constraintEnd_toEndOf="parent"
