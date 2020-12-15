@@ -8,4 +8,7 @@
     <color name="white">#FFFFFF</color>
     <color name="gray">#ECECEC</color>
     <color name="dark_gray">#6D6D80</color>
+    <color name="accent">#FF3365</color>
+    <color name="view_card_bg">#80000000</color>
+    <color name="view_card_bg_end">#8C222232</color>
 </resources>

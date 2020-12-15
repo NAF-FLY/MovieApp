@@ -49,4 +49,14 @@
         <item name="android:textStyle">bold</item>
     </style>
 
+    <style name="text_header">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="ReviewTextStyle">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textSize">14sp</item>
+    </style>
 </resources>
