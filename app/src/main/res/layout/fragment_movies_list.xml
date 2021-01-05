@@ -122,7 +122,7 @@
                     style="@style/ReviewTextStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="125 reviews"
+                    android:text="@string/review_count"
                     android:textSize="8sp"
                     app:layout_constraintBottom_toBottomOf="@+id/ratingBar"
                     app:layout_constraintStart_toEndOf="@+id/ratingBar"
