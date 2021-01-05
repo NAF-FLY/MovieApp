@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background">
+    android:background="@color/background"
+    tools:context=".FragmentMoviesDetails">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -28,7 +29,6 @@
             android:id="@+id/logo_gradient_mask"
             android:layout_width="0dp"
             android:layout_height="0dp"
-
             android:background="@drawable/gradient_logo"
             app:layout_constraintBottom_toBottomOf="@id/movie_logo_img"
             app:layout_constraintEnd_toEndOf="@id/movie_logo_img"
@@ -44,7 +44,6 @@
             android:textColor="@color/white"
             android:textSize="12sp"
             android:alpha="0.5"
-            android:onClick="moveToMainScreen"
             android:layout_marginStart="@dimen/margin_screen"
             android:layout_marginTop="48dp"
             app:drawableLeftCompat="@drawable/ic_left_arrow"
